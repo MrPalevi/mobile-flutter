@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'Wisata App',
       theme: ThemeData(),
       home: const DashboardScreen(),
+      debugShowCheckedModeBanner: false, 
     );
   }
 }
