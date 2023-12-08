@@ -113,20 +113,33 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
-                      SizedBox(height: SizeConfig.screenHeight * 0.04),
+                      Container(
+                        width: double.infinity,
+                        height: MediaQuery.of(context).size.height * 0.30,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: NetworkImage(
+                                'https://cdn.pixabay.com/photo/2023/07/28/10/01/tourist-8154933_1280.png'), // Ganti dengan URL gambar Anda
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 5),
                       const Text(
-                        "Welcome Back",
+                        "Wisata App",
                         style: TextStyle(
+                          fontFamily: 'DancingScript',
                           color: Colors.black,
-                          fontSize: 28,
+                          fontSize: 35,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
+                      SizedBox(height: 5),
                       const Text(
                         "Sign in with your email and password  \nor continue with social media",
                         textAlign: TextAlign.center,
                       ),
-                      SizedBox(height: SizeConfig.screenHeight * 0.08),
+                      SizedBox(height: 20),
                       Form(
                         key: _formKey,
                         child: Column(
@@ -173,7 +186,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           ],
                         ),
                       ),
-                      SizedBox(height: SizeConfig.screenHeight * 0.08),
+                      SizedBox(height: 10),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -191,7 +204,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           ),
                         ],
                       ),
-                      SizedBox(height: getProportionateScreenHeight(30)),
+                      SizedBox(height: 10),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [

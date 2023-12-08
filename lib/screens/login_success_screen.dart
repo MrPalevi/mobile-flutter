@@ -14,7 +14,10 @@ class LoginSuccessScreen extends StatelessWidget {
       // ),
       body: Column(
         children: [
-          SizedBox(height: SizeConfig.screenHeight * 0.04),
+          SizedBox(
+            height: SizeConfig.screenHeight * 0.04,
+            width: double.infinity,
+          ),
           Image.asset(
             "assets/images/success.png",
             height: SizeConfig.screenHeight * 0.4, //40%
@@ -30,7 +33,8 @@ class LoginSuccessScreen extends StatelessWidget {
           ),
           const Spacer(),
           SizedBox(
-            width: SizeConfig.screenWidth * 0.6,
+            // width: SizeConfig.screenWidth * 0.6,
+            width: double.infinity,
             child: DefaultButton(
               text: "Back to home",
               press: () {

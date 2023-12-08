@@ -34,7 +34,7 @@ class newsScreen extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              'Remembers what user said earlier in the conversation',
+                              'Explore tempat wisata baru di Bandung',
                               style: TextStyle(
                                   fontSize: 16, fontWeight: FontWeight.bold),
                               maxLines: 2,
@@ -79,7 +79,7 @@ class newsScreen extends StatelessWidget {
                               image: DecorationImage(
                                 fit: BoxFit.cover,
                                 image: NetworkImage(
-                                    'https://cdn.pixabay.com/photo/2023/04/02/23/08/ai-generated-7895586_1280.jpg'),
+                                    'https://cdn.pixabay.com/photo/2017/05/23/12/41/white-crater-2337128_1280.jpg'),
                               ))),
                     ],
                   ),
