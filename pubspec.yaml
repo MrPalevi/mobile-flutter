@@ -82,13 +82,19 @@ flutter:
      - family: Oxygen
        fonts:
          - asset: assets/fonts/Oxygen-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
+     #    - asset: fonts/Schyler-Italic.ttf
+     #      style: italic
      - family: Staatliches
        fonts:
          - asset: assets/fonts/Staatliches-Regular.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
+      #   - asset: fonts/TrajanPro_Bold.ttf
+      #    weight: 700
+     - family: DancingScript
+       fonts:
+        - asset: assets/fonts/DancingScript-Regular.ttf
+     - family: Satisfy
+       fonts:
+        - asset: assets/fonts/Satisfy-Regular.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
