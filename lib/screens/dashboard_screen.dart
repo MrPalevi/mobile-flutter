@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:wisata_app/helper/session_manager.dart';
+import 'package:wisata_app/screens/lodging_screen.dart';
 import 'package:wisata_app/screens/main_screen.dart';
 import 'package:wisata_app/screens/news_screen.dart';
+import 'package:wisata_app/screens/ticket_screen.dart';
 import 'package:wisata_app/utils/contants.dart';
 import 'package:wisata_app/widgets/button_nav_bar.dart';
 import 'package:wisata_app/widgets/category_card.dart';
@@ -90,12 +92,22 @@ class DashboardScreen extends StatelessWidget {
                         CategoryCard(
                           title: "Ticket",
                           imgSrc: "assets/icons/ticket.png",
-                          press: () {},
+                          press: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return ticketScreen();
+                            }));
+                          },
                         ),
                         CategoryCard(
                           title: "Lodging",
                           imgSrc: "assets/icons/lodging.png",
-                          press: () {},
+                          press: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return lodgingScreen();
+                            }));
+                          },
                         ),
                       ],
                     ),
