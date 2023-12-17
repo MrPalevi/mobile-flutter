@@ -20,20 +20,20 @@ class LodgingPlace {
   });
 }
 
-var LodgingPlaceList = [
+var lodgingPlaceList = [
   LodgingPlace(
-    name: 'Farm House Lembang',
-    location: 'Lembang',
+    name: 'Kampung Singkur',
+    location: 'Bandung',
     description:
-        'Berada di jalur utama Bandung-Lembang, Farm House menjadi objek wisata yang tidak pernah sepi pengunjung. Selain karena letaknya strategis, kawasan ini juga menghadirkan nuansa wisata khas Eropa. Semua itu diterapkan dalam bentuk spot swafoto Instagramable.',
+        'Berada di jalur kota Bandung Kampung Singkur menjadi salah satu pilihan untuk menginapan setelah perjalanan jauh.',
     openDays: 'Open Everyday',
-    openTime: '09:00 - 20:00',
-    ticketPrice: 'Rp 25000',
-    imageAsset: 'assets/images/farm-house.jpg',
+    openTime: '24 jam',
+    ticketPrice: 'Rp 35000 - 600000',
+    imageAsset: 'assets/images/singkur.jpg',
     imageUrls: [
-      'https://media-cdn.tripadvisor.com/media/photo-s/0d/7c/59/70/farmhouse-lembang.jpg',
-      'https://media-cdn.tripadvisor.com/media/photo-w/13/f0/22/f6/photo3jpg.jpg',
-      'https://media-cdn.tripadvisor.com/media/photo-m/1280/16/a9/33/43/liburan-di-farmhouse.jpg'
+      'https://media-cdn.tripadvisor.com/media/photo-o/09/4e/35/a5/g-h-universal.jpg',
+      'https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2021/01/21-3-by-luthfyfadilahalwahidy@ayorizqi@sigotik91-740x555.jpg',
+      'https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2021/01/21-3-by-luthfyfadilahalwahidy@ayorizqi@sigotik91-740x555.jpg'
     ],
   ),
   LodgingPlace(

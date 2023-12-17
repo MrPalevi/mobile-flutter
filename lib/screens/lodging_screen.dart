@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:wisata_app/models/lodging_place.dart';
+import 'package:wisata_app/models/tourism_place.dart';
+import 'package:wisata_app/screens/detail_screen.dart';
+import 'package:wisata_app/screens/lodging_detail.dart';
 import 'package:wisata_app/utils/contants.dart';
 
 class lodgingScreen extends StatelessWidget {
@@ -10,6 +14,49 @@ class lodgingScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Lodging'),
         backgroundColor: primaryColor,
+      ),
+      body: ListView.builder(
+        itemBuilder: (context, index) {
+          final LodgingPlace place = lodgingPlaceList[index];
+          return InkWell(
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return LodgingDetail(place: place);
+              }));
+            },
+            child: Card(
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Expanded(
+                    flex: 1,
+                    child: Image.asset(place.imageAsset),
+                  ),
+                  Expanded(
+                    flex: 2,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Text(
+                            place.name,
+                            style: const TextStyle(fontSize: 16.0),
+                          ),
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          Text(place.location),
+                        ],
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            ),
+          );
+        },
+        itemCount: lodgingPlaceList.length,
       ),
     );
   }
